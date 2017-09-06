@@ -3351,7 +3351,7 @@
 		@media screen and (max-width: 980px) {
 
 			.journal-left {
-				margin-left: 6em;
+				margin-left: 5em;
 				width: 42%
 			}
 
@@ -3636,39 +3636,78 @@
 		}
 
 /*Time Bar*/
-	/*#timebar1 {
-		width: 20px;
-		height: 20px;
-		position: absolute;
-		top: 50px;
-		background-color: #46A3FF;
+
+	#timebar1 {
+		width: 10px;
+		height: 10px;
+		position: relative;
+		float: left;
+		left: 1em;
+		background-color: #A8D8B9;
+		visibility: hidden;
 
 	}
+
 	#timebar2 {
-		width: 20px;
-		height: 20px;
-		position: absolute;
-		background-color: #46A3FF;
+		width: 10px;
+		height: 10px;
+		position: relative;
+		float: left;
+		left: 1em;
+		background-color: #D9CD90;
+		visibility: hidden;
 
 	}
 	#timebar3 {
-		width: 20px;
-		height: 20px;
-		position: absolute;
-		background-color: #46A3FF;
+		width: 10px;
+		height: 10px;
+		position: relative;
+		float: left;
+		left: 1em;
+		background-color: #B1B479;
+		visibility: hidden;
 
 	}
 	#timebar4 {
-		width: 20px;
-		height: 20px;
-		position: absolute;
-		background-color: #46A3FF;
+		width: 10px;
+		height: 10px;
+		position: relative;
+		float: left;
+		left: 1em;
+		background-color: #B5CAA0;
+		visibility: hidden;
 
 	}
 	#timebar5 {
-		width: 20px;
-		height: 20px;
-		position: absolute;
-		background-color: #46A3FF;
+		width: 10px;
+		height: 10px;
+		position: relative;
+		float: left;
+		left: 1em;
+		background-color: #91B493;
+		visibility: hidden;
 
-	}*/
+	}
+
+	@media screen and (max-width: 850px) {
+
+		#timebar1 {
+			display: none;
+		}
+
+		#timebar2 {
+			display: none;
+		}
+
+		#timebar3 {
+			display: none;
+		}
+
+		#timebar4 {
+			display: none;
+		}
+
+		#timebar5 {
+			display: none;
+		}
+	}
