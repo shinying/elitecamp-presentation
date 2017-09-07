@@ -2381,17 +2381,22 @@
 				.image.main {
 					margin: 0 0 2em 0;
 				}
+
+				.image.left, .image.right {
+					padding: 0 0 1.5em 0;
+					min-width: none;
+					max-width: 45%;
+				}
 			}
 
-			/*@media screen and (max-width: 480px) {
+			@media screen and (max-width: 480px) {
 
-				.image.left img, .image.right img {
-					min-width: 60%;
+				.image.left, .image.right {
+					width: 100%;
+					max-width: none;
+					float: none;
 				}
-				.image.left img, .image.right img {
-					clear: both;
-				}
-			}*/
+			}
 
 /* Table */
 

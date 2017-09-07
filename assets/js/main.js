@@ -194,63 +194,59 @@
 
 				});
 
-			// Banner
+			
+		// Banner
 			$('#title').fadeIn(1000);
 			$('#rec1').animate({width:'50em'},500);
 			$('#rec2').delay(500).animate({height:'+=35%'},250);
 			$('#rec4').delay(750).animate({marginLeft:'-=50em', width:'50em'},500);
 			$('#rec3').delay(1250).animate({height:'+=35%', top:'25%'},250);
 
-
-			// Time Bar
-			// $(window).scroll(function(){
-			// 	$('#timebar1').animate({height:'40em'}, 'slow');
-			// 	console.log('scroll event')
-			// });
-
-
-			$(window).scroll(function() {
-        		var t1 = $('#timebar1').position().top;
-        		var t2 = $('#timebar2').position().top;
-        		var t3 = $('#timebar3').position().top;
-        		var t4 = $('#timebar4').position().top;
-        		var t5 = $('#timebar5').position().top;
-
-        		if ($(window).scrollTop() + $(window).height() > t1+600) {
-        			$('#timebar1').css('visibility','visible');
-            		$('#timebar1').animate({height:'40em'}, 'slow');
-        		}
-
-        		if ($(window).scrollTop() + $(window).height() > t2+500) {
-        			$('#timebar2').css('visibility','visible');
-            		$('#timebar2').animate({height:'15em'}, 'slow');
-        		}
-
-        		if ($(window).scrollTop() + $(window).height() > t3+600) {
-        			$('#timebar3').css('visibility','visible');
-            		$('#timebar3').animate({height:'30em'}, 'slow');
-        		}
-
-        		if ($(window).scrollTop() + $(window).height() > t4+500) {
-        			$('#timebar4').css('visibility','visible');
-            		$('#timebar4').animate({height:'20em'}, 'slow');
-        		}
-
-        		if ($(window).scrollTop() + $(window).height() > t5+400) {
-        			$('#timebar5').css('visibility','visible');
-            		$('#timebar5').animate({height:'20em'}, 'slow');
-            		console.log($(window).scrollTop() + $(window).height())
-            		console.log(t5)
-        		}
-    		});
-
-    		// $(window).unbind('scroll');
 			
+		// Time Bar
+			var timer
 
-			// $('timebar1').scroll(function () {
-   //      		var scrollVal = $(this).scrollTop();
-   //      		$("span.qScrollTop").text(scrollVal);
-   //  		});
+			$(window).scroll(function(){
+
+			    window.clearTimeout(timer)
+
+			    timer = window.setTimeout(function() {
+			          	console.log('scroll event') 
+			          	var t1 = $('#timebar1').position().top;
+		        		var t2 = $('#timebar2').position().top;
+		        		var t3 = $('#timebar3').position().top;
+		        		var t4 = $('#timebar4').position().top;
+		        		var t5 = $('#timebar5').position().top;
+
+		        		if ($(window).scrollTop() + $(window).height() > t1+600) {
+		        			$('#timebar1').css('visibility','visible');
+		            		$('#timebar1').animate({height:'40em'}, 'slow');
+		        		}
+
+		        		if ($(window).scrollTop() + $(window).height() > t2+500) {
+		        			$('#timebar2').css('visibility','visible');
+		            		$('#timebar2').animate({height:'15em'}, 'slow');
+		        		}
+
+		        		if ($(window).scrollTop() + $(window).height() > t3+600) {
+		        			$('#timebar3').css('visibility','visible');
+		            		$('#timebar3').animate({height:'30em'}, 'slow');
+		        		}
+
+		        		if ($(window).scrollTop() + $(window).height() > t4+500) {
+		        			$('#timebar4').css('visibility','visible');
+		            		$('#timebar4').animate({height:'20em'}, 'slow');
+		        		}
+
+		        		if ($(window).scrollTop() + $(window).height() > t5+400) {
+		        			$('#timebar5').css('visibility','visible');
+		            		$('#timebar5').animate({height:'20em'}, 'slow');
+		            		$('#timebar5').unbind();
+		            		$(window).unbind('scroll');
+		        		}
+			      }, 100)
+			})
+
 	});
 
 })(jQuery);
