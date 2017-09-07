@@ -2383,7 +2383,6 @@
 				}
 
 				.image.left, .image.right {
-					padding: 0 0 1.5em 0;
 					min-width: none;
 					max-width: 45%;
 				}
@@ -2392,6 +2391,7 @@
 			@media screen and (max-width: 480px) {
 
 				.image.left, .image.right {
+					padding: 0 0 1.5em 0;
 					width: 100%;
 					max-width: none;
 					float: none;

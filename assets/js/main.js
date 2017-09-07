@@ -211,41 +211,42 @@
 			    window.clearTimeout(timer)
 
 			    timer = window.setTimeout(function() {
-			          	console.log('scroll event') 
-			          	var t1 = $('#timebar1').position().top;
-		        		var t2 = $('#timebar2').position().top;
-		        		var t3 = $('#timebar3').position().top;
-		        		var t4 = $('#timebar4').position().top;
-		        		var t5 = $('#timebar5').position().top;
+		          	console.log('scroll event') 
+		          	var t1 = $('#timebar1').position().top;
+	        		var t2 = $('#timebar2').position().top;
+	        		var t3 = $('#timebar3').position().top;
+	        		var t4 = $('#timebar4').position().top;
+	        		var t5 = $('#timebar5').position().top;
 
-		        		if ($(window).scrollTop() + $(window).height() > t1+600) {
-		        			$('#timebar1').css('visibility','visible');
-		            		$('#timebar1').animate({height:'40em'}, 'slow');
-		        		}
+	        		if ($(window).scrollTop() > t1-200) {
+	        			$('#timebar1').css('visibility','visible');
+	            		$('#timebar1').animate({height: +(t2-t1-150)}, 'slow');
+	        		}
 
-		        		if ($(window).scrollTop() + $(window).height() > t2+500) {
-		        			$('#timebar2').css('visibility','visible');
-		            		$('#timebar2').animate({height:'15em'}, 'slow');
-		        		}
+	        		if ($(window).scrollTop() > t2-200) {
+	        			$('#timebar2').css('visibility','visible');
+	            		$('#timebar2').animate({height: +(t3-t2-150)}, 'slow');
+	        		}
 
-		        		if ($(window).scrollTop() + $(window).height() > t3+600) {
-		        			$('#timebar3').css('visibility','visible');
-		            		$('#timebar3').animate({height:'30em'}, 'slow');
-		        		}
+	        		if ($(window).scrollTop() > t3-200) {
+	        			$('#timebar3').css('visibility','visible');
+	            		$('#timebar3').animate({height: +(t4-t3-150)}, 'slow');
+	        		}
 
-		        		if ($(window).scrollTop() + $(window).height() > t4+500) {
-		        			$('#timebar4').css('visibility','visible');
-		            		$('#timebar4').animate({height:'20em'}, 'slow');
-		        		}
+	        		if ($(window).scrollTop() > t4-200) {
+	        			$('#timebar4').css('visibility','visible');
+	            		$('#timebar4').animate({height: +(t5-t4-150)}, 'slow');
+	        		}
 
-		        		if ($(window).scrollTop() + $(window).height() > t5+400) {
-		        			$('#timebar5').css('visibility','visible');
-		            		$('#timebar5').animate({height:'20em'}, 'slow');
-		            		$('#timebar5').unbind();
-		            		$(window).unbind('scroll');
-		        		}
-			      }, 100)
+	        		if ($(window).scrollTop() > t5-400) {
+	        			$('#timebar5').css('visibility','visible');
+	            		$('#timebar5').animate({height:'+40vh'}, 'slow');
+	            		$('#timebar5').unbind();
+	            		$(window).unbind('scroll');
+	        		}
+			    }, 100)
 			})
+
 
 	});
 
