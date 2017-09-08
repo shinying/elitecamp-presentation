@@ -1849,6 +1849,16 @@
 		text-align: right;
 	}
 
+	#form-gallery {
+		display: none;
+	}
+
+		@media screen and (max-width: 480px) {
+			#form-gallery {
+				display: inline;
+			}
+		}
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -2352,6 +2362,10 @@
 			max-width: 40%;
 		}
 
+		.image.left.illu, .image.right.illu {
+			max-width: 60%;
+		}
+
 			.image.left img, .image.right img {
 				width: 100%;
 			}
@@ -2407,6 +2421,18 @@
 					width: 100%;
 					max-width: none;
 					float: none;
+				}
+
+				.image.left.illu {
+					padding: 0 1em 1em 0;
+					float: left;
+					max-width: 50%;
+				}
+
+				.image.right.illu {
+					padding: 0 0 1em 1em;
+					float: right;
+					max-width: 50%;
 				}
 			}
 
