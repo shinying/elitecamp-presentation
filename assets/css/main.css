@@ -1825,6 +1825,18 @@
 			margin: 3em 0;
 		}
 
+		hr.mobile-line {
+			display: none;
+		}
+
+			@media screen and (max-width: 850px) {
+
+			hr.mobile-line {
+				display: block;
+			}
+
+	} 
+
 	.align-left {
 		text-align: left;
 	}
