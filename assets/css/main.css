@@ -3667,7 +3667,7 @@
 
 	#timebar2 {
 		width: 10px;
-		height: 10px;
+		height: 100px;
 		position: relative;
 		float: left;
 		left: 1em;
