@@ -217,6 +217,8 @@
 	        		var t3 = $('#timebar3').position().top;
 	        		var t4 = $('#timebar4').position().top;
 	        		var t5 = $('#timebar5').position().top;
+	        		var t6 = $('#timebar6').position().top;
+	        		var t7 = $('#timebar7').position().top;
 
 	        		if ($(window).scrollTop() > t1-200) {
 	        			$('#timebar1').css('visibility','visible');
@@ -238,12 +240,26 @@
 	            		$('#timebar4').animate({height: +(t5-t4-150)}, 'slow');
 	        		}
 
-	        		if ($(window).scrollTop() > t5-400) {
+
+	        		if ($(window).scrollTop() > t5-200) {
 	        			$('#timebar5').css('visibility','visible');
-	            		$('#timebar5').animate({height:'+40vh'}, 'slow');
-	            		$('#timebar5').unbind();
+	            		$('#timebar5').animate({height: +(t6-t5-150)}, 'slow');
+	        		}
+
+	        		if ($(window).scrollTop() > t6-200) {
+	        			$('#timebar6').css('visibility','visible');
+	            		$('#timebar6').animate({height: +(t7-t6-150)}, 'slow');
+	        		}
+
+
+	        		if ($(window).scrollTop() > t7-400) {
+	        			$('#timebar7').css('visibility','visible');
+	            		$('#timebar7').animate({height:'+40vh'}, 'slow');
+	            		$('#timebar7').unbind();
 	            		$(window).unbind('scroll');
 	        		}
+
+
 			    }, 100)
 			})
 
