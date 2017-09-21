@@ -202,6 +202,10 @@
 			$('#rec4').delay(750).animate({marginLeft:'-=50em', width:'50em'},500);
 			$('#rec3').delay(1250).animate({height:'+=35%', top:'25%'},250);
 
+		setTimeout(function(){
+			$.getScript("masonry-docs.min.js");
+			},5000)
+
 	});
 
 })(jQuery);
