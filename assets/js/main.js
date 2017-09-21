@@ -202,68 +202,6 @@
 			$('#rec4').delay(750).animate({marginLeft:'-=50em', width:'50em'},500);
 			$('#rec3').delay(1250).animate({height:'+=35%', top:'25%'},250);
 
-			
-		// Time Bar
-			var timer
-
-			$(window).scroll(function(){
-
-			    window.clearTimeout(timer)
-
-			    timer = window.setTimeout(function() {
-		          	console.log('scroll event') 
-		          	var t1 = $('#timebar1').position().top;
-	        		var t2 = $('#timebar2').position().top;
-	        		var t3 = $('#timebar3').position().top;
-	        		var t4 = $('#timebar4').position().top;
-	        		var t5 = $('#timebar5').position().top;
-	        		var t6 = $('#timebar6').position().top;
-	        		var t7 = $('#timebar7').position().top;
-
-	        		if ($(window).scrollTop() > t1-200) {
-	        			$('#timebar1').css('visibility','visible');
-	            		$('#timebar1').animate({height: +(t2-t1-150)}, 'slow');
-	        		}
-
-	        		if ($(window).scrollTop() > t2-200) {
-	        			$('#timebar2').css('visibility','visible');
-	            		$('#timebar2').animate({height: +(t3-t2-150)}, 'slow');
-	        		}
-
-	        		if ($(window).scrollTop() > t3-200) {
-	        			$('#timebar3').css('visibility','visible');
-	            		$('#timebar3').animate({height: +(t4-t3-150)}, 'slow');
-	        		}
-
-	        		if ($(window).scrollTop() > t4-200) {
-	        			$('#timebar4').css('visibility','visible');
-	            		$('#timebar4').animate({height: +(t5-t4-150)}, 'slow');
-	        		}
-
-
-	        		if ($(window).scrollTop() > t5-200) {
-	        			$('#timebar5').css('visibility','visible');
-	            		$('#timebar5').animate({height: +(t6-t5-150)}, 'slow');
-	        		}
-
-	        		if ($(window).scrollTop() > t6-200) {
-	        			$('#timebar6').css('visibility','visible');
-	            		$('#timebar6').animate({height: +(t7-t6-150)}, 'slow');
-	        		}
-
-
-	        		if ($(window).scrollTop() > t7-400) {
-	        			$('#timebar7').css('visibility','visible');
-	            		$('#timebar7').animate({height:'+40vh'}, 'slow');
-	            		$('#timebar7').unbind();
-	            		$(window).unbind('scroll');
-	        		}
-
-
-			    }, 100)
-			})
-
-
 	});
 
 })(jQuery);

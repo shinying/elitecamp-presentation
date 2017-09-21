@@ -2366,6 +2366,10 @@
 			max-width: 60%;
 		}
 
+		.image.left.profile, .image.right.profile {
+			max-width: 20%;
+		}
+
 			.image.left img, .image.right img {
 				width: 100%;
 			}
@@ -2433,6 +2437,11 @@
 					padding: 0 0 1em 1em;
 					float: right;
 					max-width: 50%;
+				}
+				.image.right.profile {
+					padding: 0 0.5em 0.5em 0.5em;
+					min-width: 30%;
+					float: right;
 				}
 			}
 
