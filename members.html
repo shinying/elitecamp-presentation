@@ -684,7 +684,19 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/featherlight.js" type="text/javascript" charset="utf-8"></script>
-            <script src="Masonry_files/masonry-docs.min.js" type="text/javascript" defer="true"></script>
+            <!-- <script src="Masonry_files/masonry-docs.min.js" type="text/javascript" defer="true"></script> -->
+            <script type="text/javascript">
+                function downloadJSAtOnload() {
+                    var element = document.createElement("script");
+                    element.src = "Masonry_files/masonry-docs.min.js";
+                    document.body.appendChild(element);
+                    }
+                    if (window.addEventListener)
+                    window.addEventListener("load", downloadJSAtOnload, false);
+                    else if (window.attachEvent)
+                    window.attachEvent("onload", downloadJSAtOnload);
+                    else window.onload = downloadJSAtOnload;
+            </script>
 
             <script src="assets/js/main.js"></script>
 
