@@ -3640,7 +3640,8 @@
 			}
 
 			#footer > .inner .copyright {
-				margin-left: 10%;
+				max-width: 80%;
+				margin-left: 15%;
 			}
 
 				/*#footer > .inner .copyright li {

@@ -1168,7 +1168,7 @@ two columns for large devices
 light gray #D8D5D2
 dark gray #333
 purple #D75455
-red #F17C67
+red #EB7A77
 */
 
 * {
@@ -1208,7 +1208,7 @@ a code {
 
 a:hover,
 a:hover code {
-  color: #F17C67;
+  color: #EB7A77;
 }
 
 
@@ -1278,7 +1278,7 @@ a code {
 
 a:hover code {
   color: white;
-  background: #F17C67;
+  background: #EB7A77;
 }
 
 code .string,
@@ -1337,7 +1337,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 .content h2:target {
   padding-left: 0.5em;
-  background: #F17C67;
+  background: #EB7A77;
   color: white;
 }
 
@@ -1455,7 +1455,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 .animate-item-size-demo .item-content {
   width: 60px;
   height: 60px;
-  background: #F17C67;
+  background: #EB7A77;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
@@ -1653,7 +1653,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* animate-item-size-item__content is visible, and transitions size */
 .animate-item-size-item__content {
-  background: #F17C67;
+  background: #EB7A77;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.7);
   border-radius: 5px;
@@ -1724,7 +1724,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 .bootstrap-3__grid-item-content {
   height: 100px;
-  background: #F17C67;
+  background: #EB7A77;
   border: 2px solid hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
 }
@@ -1869,7 +1869,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 .showcase-item__link {
   background: #E8E5E2;
-  color: #F17C67;
+  color: #EB7A77;
 }
 
 .showcase-item__link:hover {
@@ -1974,7 +1974,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   width: 80px;
   height: 60px;
   float: left;
-  background: #F17C67;
+  background: #EB7A77;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
@@ -2052,8 +2052,8 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 .hero-grid__item,
 .hero-grid__grid-sizer {
-  width: 47%;
-  margin: 0 1% 20px 1%;
+  width: 45%;
+  margin: 0 0.25em 0.5em 0.25em;
 }
 
 .hero-grid__gutter-sizer {
@@ -2064,7 +2064,6 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   float: left;
   border-radius: 8px;
   background: #D8D6D2;
-  margin-bottom: 20px;
 }
 
 /* ----  ---- */
@@ -2072,8 +2071,8 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 .hero__title {
   margin: 0;
   line-height: 1.2;
-  font-size: 3rem;
-  color: #F17C67;
+  font-size: 1em;
+  color: #EB7A77;
 }
 
 .hero__tagline {
@@ -2098,7 +2097,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   position: relative;
   display: block;
   padding: 10px;
-  background: #F17C67;
+  background: #EB7A77;
   color: white;
   border-radius: 8px;
   font-size: 1.1rem;
@@ -2135,7 +2134,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 .hero__example-link {
   display: block;
   float:left;
-  background: #F17C67;
+  background: #EB7A77;
   border-radius: 8px;
   color: white;
 }
@@ -2161,22 +2160,14 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   
 }
 
-/* enough width for 4 columns */
-@media screen and ( min-width: 768px ) {
+/* enough width for 6 columns */
+@media screen and ( min-width: 400px ) {
 
   .hero-grid__grid-sizer,
   .hero-grid__item {
-    width: 17.5%;
+    width: 30%;
   }
 
-  .hero-grid__item--width2 {
-    width: 47%
-  }
-
-
-  .hero-grid__item--width3 {
-    width: 71.5%;
-  }
 
   .hero__title {
     font-size: 6rem;
@@ -2209,6 +2200,29 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   }
 
 }
+
+    @media screen and ( min-width: 600px ) {
+      .hero-grid__grid-sizer,
+      .hero-grid__item {
+        width: 23%;
+      }
+    }
+
+    @media screen and ( min-width: 700px ) {
+      .hero-grid__grid-sizer,
+      .hero-grid__item {
+        width: 18%;
+      }
+    }
+
+    @media screen and ( min-width: 900px ) {
+      .hero-grid__grid-sizer,
+      .hero-grid__item {
+        width: 15%;
+        margin: 0 0.36em 0.7em 0.36em;
+      }
+    }
+
 
 @charset "UTF-8";
 
@@ -2348,17 +2362,17 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 
 .site-nav__item--homepage a {
-  color: #F17C67;
+  color: #EB7A77;
 }
 
 .site-nav__item a:hover {
-  background: #F17C67;
+  background: #EB7A77;
   color: white;
 }
 
 .site-nav__item a:active {
   background: white;
-  color: #F17C67;
+  color: #EB7A77;
 }
 
 /* selected */
